@@ -1,0 +1,651 @@
+.complete{
+    background-color: black ;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* navbar */
+ .navbar {
+    background-color: #111; /* Dark background */
+  }
+
+
+  .nav-link {
+    transition: 0.3s ease;
+  }
+  /* -----------------------------
+     ✅ MEDIA QUERIES
+     Make Navbar Perfectly Responsive
+  ------------------------------*/
+
+  /* For tablets and smaller (below 992px) */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: #111; /* Keep dark bg when collapsed */
+      border-radius: 10px;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+  }
+
+  /* For small mobile screens (below 576px) */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      padding: 8px 0;
+    }
+
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  }
+  #education{
+    background-color: black !important;
+}
+.hero {
+    background-color: black !important;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1, .hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card img {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+.first{
+    color: rgb(252, 15, 192)    ;
+    text-transform: capitalize;
+        text-shadow: 3px 3px 6px rgba(238, 130, 238,0.99) ;  /* Light shadow effect */
+
+    
+}
+.first1{
+    color: rgb(252, 15, 192)    ;
+    text-transform: capitalize;
+        /* text-shadow: 3px 3px 6px rgba(238, 130, 238,0.99) ;  Light shadow effect */
+
+    
+}
+
+/* Typing animation */
+#name {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    padding-right: 5px;
+    font-size: 3rem;
+}
+
+/* Image styling */
+.img1 {
+    padding-right: 10px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99); 
+    
+}
+
+  
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .img1 {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* .navbar-nav .nav-item :hover{
+    color:rgb(132, 29, 132) ;
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99); 
+} */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgb(132, 29, 132)!important; /* Change text color on hover */
+   color: white;
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99); /* Add shadow on hover */
+}
+
+/* Default button styles */
+.btn-light {
+    background-color: violet;
+    color: black;
+    border: 1px solid violet;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99); 
+}
+
+/* Button hover effect */
+.btn-light:hover {
+    background-color: rgb(132, 29, 132);  /* Change the background to violet */
+    color: white;              /* Change the text color to white */
+    border-color: rgb(132, 29, 132);      /* Optional: Change the border color */
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99); 
+}
+/* Education Section Style */
+#education {
+    background-color: #f8f9fa; /* Light background color */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* #education h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+} */
+
+.edu-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(133, 29, 133);
+
+    
+}
+
+.edu-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(238, 130, 238, 0.4); /* Subtle shadow effect */
+}
+
+.edu-card h3 {
+    /* color: #6f42c1; Purple color for headings */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.edu-card p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+.internship-image:hover {
+    cursor: pointer; /* Show pointer cursor when hovering */
+}
+/* Styling for internship image */
+.internship-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Set a maximum width */
+    margin: 0 auto;
+}
+
+.internship-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Section Styling */
+#certificates {
+    background-color: #222;
+    color: white;
+    padding-top: 150px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: rgb(252, 15, 192);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* Certificate Cards Styling */
+.certificate-card {
+    background-color: rgb(238, 130, 238);
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99);
+}
+
+/* Landscape Certificate Image Styling */
+.certificate-img {
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Modal Image Styling */
+.certificate-modal-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Button Styling */
+.btn-info {
+    background-color: rgb(252, 15, 192);
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: rgb(132, 29, 132);
+    box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99);
+}
+
+/* Modal Styling */
+.modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Design for 6 Certificates */
+@media (max-width: 768px) {
+    .certificate-card {
+        margin-bottom: 20px;
+    }
+
+    .certificate-img {
+        height: 50px;
+    }
+    
+    /* On smaller screens, the certificates stack vertically */
+    .col-md-4 {
+        max-width: 100%;
+    }
+}
+/* .certificate-card {
+    height: ;
+} */
+
+.certificate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Add margin to each card */
+.certificate-card {
+    margin-left: 30px; 
+    margin-bottom: 40px;
+}
+
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color:#f8f9fa;
+  }
+  
+  .super {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  
+  .card00 {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .card00:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card00 video {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .overlay-play {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .overlay-play:hover {
+    background: rgba(0, 0, 0, 0.4);
+   
+  }
+  
+  
+  .overlay-play::before {
+    
+    content: '';
+    display: inline-block;
+    border-style: solid;
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    opacity: 0.9;
+  }
+  
+  .card00-content {
+    padding: 15px 20px;
+  }
+  
+  .card00-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card00-desc {
+    font-size: 14px;
+    color: #666;
+  }
+ /* -------------------------------
+   ✅ MEDIA QUERIES for Responsiveness
+-------------------------------- */
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: white;
+  padding: 50px 5%;
+  gap: 40px;
+}
+
+/* Left Text Section */
+.hero .container {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Typing effect cursor */
+#name {
+  border-right: 2px solid #fff;
+  padding-right: 3px;
+  font-size: 3rem;
+}
+
+/* Right Image Section */
+.hero .container1 {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .img1 {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 15px rgba(238, 130, 238, 0.99);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Tablet view (up to 768px) */
+@media (max-width: 768px) {
+  .hero {
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .img1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  #name {
+    font-size: 2.2rem;
+    border-right-width: 1.5px;
+  }
+}
+
+/* Mobile view (up to 576px) */
+@media (max-width: 576px) {
+  .hero {
+    flex-direction: row; /* 👈 Side by side rahega */
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .hero .container {
+    flex: 1 1 60%;
+  }
+
+  .hero .container1 {
+    flex: 1 1 40%;
+    justify-content: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  #name {
+    font-size: 1.4rem;
+    border-right-width: 1px;
+  }
+
+  .hero .img1 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+}
+.edu-card {
+    color: #fff;
+  background-color: rgb(133, 29, 133); 
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  width: 90%; /* reduce width a little so they don’t touch edges */
+  margin: 0 auto; /* center the card */
+}
+
+/* Hover effect */
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+}
+
+/* Headings and text */
+.edu-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.edu-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* ✅ Tablet view */
+@media (max-width: 768px) {
+  .edu-card {
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%; /* smaller width */
+  }
+  .edu-card h3 {
+    font-size: 1.3rem;
+  }
+  .edu-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Mobile view */
+@media (max-width: 576px) {
+  .edu-card {
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%; /* make cards narrower */
+  }
+  .edu-card h3 {
+    font-size: 1.1rem;
+  }
+  .edu-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ✅ Fix horizontal scroll issue */
+html, body {
+  overflow-x: hidden;
+}
+
+/* ✅ Fix Bootstrap row margins */
+#education .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ✅ Fix column spacing */
+#education .col-md-4 {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+/* ✅ Your edu-card styles (adjusted for fit) */
+.edu-card {
+  color: #fff;
+  background-color: rgb(133, 29, 133);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  width: 100%; /* was 90%, changed to 100% to avoid overflow */
+  max-width: 350px; /* keeps nice width on large screens */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Hover effect */
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+}
+
+/* Headings and text */
+.edu-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.edu-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* ✅ Tablet view */
+@media (max-width: 768px) {
+  .edu-card {
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: none;
+  }
+  .edu-card h3 {
+    font-size: 1.3rem;
+  }
+  .edu-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Mobile view */
+@media (max-width: 576px) {
+  .edu-card {
+    padding: 15px;
+    border-radius: 10px;
+    width: 85%;
+  }
+  .edu-card h3 {
+    font-size: 1.1rem;
+  }
+  .edu-card p {
+    font-size: 0.85rem;
+  }
+}
